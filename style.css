@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+body {
+    background-image: linear-gradient( #111, #222);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body::after{
+    content: ' ';
+    width: 100%;
+    height: 100%;
+    background: red;
+    position: absolute;
+    clip-path: circle(40% at right 70%);
+    z-index: -1;
+
+}
+
+* {
+    font-family: "Ubuntu", sans-serif;
+    padding: 0;
+    margin: 0;
+
+}
+a{
+    color: #fff;
+    text-decoration: none;
+}
+.contianer{
+   background: rgba(255,255,255, 0.1);
+    height: 90%;
+    background-position: center;
+    width: 80%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   padding: 20px 0;   
+   width: 80%; 
+   margin: auto;
+}
+.logo{
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+ul{
+    list-style: none;
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+ul a {
+    border-bottom: 2px solid transparent;
+    display: inline-block;
+    margin: 0 6px;
+    font-size: 18px;
+    font-weight: 500px;
+}
+ul a:hover{
+   color: #e80e02;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90%;
+    width: 80%;
+    margin: auto;
+}
+.content .text{
+    color: #fff;
+    width: 40%;
+
+}
+.content .text h2{
+      font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+p{
+    font-size: 18px;
+    line-height: 25px;
+    margin: 10px 0;
+    letter-spacing: 1px;
+    text-wrap: wrap;
+}
+.content .image{
+    width: 40%;
+}
+.content .image img{
+    width: 400px;
+}
+@media (min-width:850px) and (max-width:1163px){
+    .content .image img{
+    width: 300px;
+}
+}
+@media  (max-width:850px){
+  .content , nav{
+    flex-direction: column;
+    justify-content: center;
+  }
+  .content .image , .content .text{
+    width: 80%;
+  }
+      .content .image img{
+    width: 300px;
+}
+body::after{
+   
+    clip-path: circle(50% at bottom );
+    
+
+}
+
+}
+.whatsapp-share {
+  background-color: #25D366;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.whatsapp-share:hover {
+  background-color: #1ebe5d;
+}
